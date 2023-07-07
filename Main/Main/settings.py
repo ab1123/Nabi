@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-_ycm(2gk0q5*&ar6w(nte*(l-w+vqf8_u)x#w_1$i2(ts0kle6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['128.199.21.185','www.nabi.co.in','nabi.co.in']
 
 
 # Application definition
