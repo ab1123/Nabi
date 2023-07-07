@@ -1,0 +1,432 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title> NABI </title>
+    <!-- MDB icon -->
+    <link rel="icon" href={% static "img/mdb-favicon.ico" %} type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,600&display=swap">
+    <!-- MDB -->
+    <link rel="stylesheet" href={% static "css/mdb.min.css" %} />
+    <link rel="stylesheet" href={% static "css/style-final.css" %}>
+  </head>
+  <body>
+    <header>
+      <!-- Intro settings -->
+      <style>
+        /* Default height for small devices */
+        #intro-example {
+          height: 400px;
+        }
+    
+        /* Height for devices larger than 992px */
+        @media (min-width: 992px) {
+          #intro-example {
+            height: 600px;
+          }
+        }
+      </style>
+    
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #FFF;">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Toggle button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+      
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Navbar brand -->
+            <a id="nabi-logo" class="navbar-brand mt-2 mt-lg-0" href="#">
+              <img 
+                src={% static "img/Nabi Logo/nabiBlack-removebg-preview.png" %}
+                height="40"
+                alt="MDB Logo"
+                loading="lazy"
+              />
+            </a>
+            <!-- Left links -->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-section">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#events">Event</a>
+              </li>
+              <li class="nav-item">
+                <a id="cntct-us" class="nav-link" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+            <!-- Left links -->
+          </div>
+          
+          <!-- Right elements -->
+        </div>
+        <!-- Container wrapper -->
+      </nav>
+      <!-- Navbar -->
+    
+      <!-- Background image -->
+      <div
+        id="intro-example"
+        class="p-5 text-center bg-image"
+        style="background-image: url({% static 'img/unsplash_ZUWls_bDgAk.png' %});">
+        <div class="mask" style="background: linear-gradient(to bottom, #1a4cff 0%, #e75a7c 86%); opacity: 85%;">
+          <div class="main-heading">
+            <div class="heading-box">
+              <h1 class="mn-hd-1"> Welcome To NABI</h1>
+              <h4 class="mn-hd-2"> At Nabi, we believe in creating events that give your <br> guests a season to stare. </h4>
+              {% comment %} <button><a href="#">Explore more</a></button> {% endcomment %}
+            </div>
+          </div>
+        </div>
+        <svg class="position-absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+             style="left: 0; bottom: 0;">
+        <path fill="#fff" fill-opacity="1" d="M0,64L60,74.7C120,85,240,107,360,112C480,117,600,107,720,138.7C840,171,960,245,1080,240C1200,235,1320,149,1380,106.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+      
+        <div class="svg-1">
+          <img src={% static "img/Work in progress-rafiki (1) 1.png" %} alt="illustration-1">
+        </div>
+        <div class="svg-2">
+          <img src={% static "img/Happy announcement-pana 1.png" %} alt="illustration-2">
+        </div>
+        <div class="timer">
+          <div class="cmng-sn">
+            <h3>We're Coming Soon</h3>
+          </div>
+          <div class="launch-time">
+            <div>
+              <p id="days">00</p>
+              <span>Days</span>
+            </div>
+            <div>
+              <p id="hours">00</p>
+              <span>Hours</span>
+            </div>
+            <div>
+              <p id="minutes">00</p>
+              <span>Minutes</span>
+            </div>
+            <div>
+              <p id="seconds">00</p>
+              <span>Seconds</span>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+
+    </header>
+    
+
+    <!---------------  ABOUT  ---------------------->
+
+
+    <section class="about">
+      <div id="about-section" class="abt-main">
+        <div class="tp-sctn">
+          <div class="abt-cnt">
+            <h1 class="abt-cnt-h1">About Us </h1>
+            <div class="abt-cnt-illst">
+              <img src={% static "img/Notebook-amico 1.png" %} alt="illustration-3">
+            </div>
+          </div>
+        </div>
+        <div class="mdl-sctn-main">
+          <div class="mdl-sctn-child">
+            <div class="intro-box">
+              <div class="sub-intro-box">
+                <h4>Introduction</h4>
+                <p>
+                  Our team consists of skilled people who have deep understanding in all aspects of event planning.<br>
+                  Nabi is a startup Event Management and Organising Company for personal and professional events.<br>
+                  Our clients are at the heart of everything we do. We prioritise their needs and strive to exceed their expectations.<br>
+                  By leveraging cutting-edge technologies and staying ahead of trends, we provide our clients with innovative solutions.<br>
+                  Our team follows industry best practices and standards to ensure that every project we undertake is executed with excellence.<br>
+                  We believe in building long-lasting relationships with our customers based on trust, integrity and transparency.<br>
+
+                </p>
+              </div>
+            </div> 
+          </div> 
+          <div class="mdl-sctn-child">
+            <div class="vsn-box">
+              <div class="sub-vsn-box">
+                <h4>Our Vision</h4>
+                <p>
+                  Our vision is to be the leading event organizing company in Dehradun.<br>
+                  We want to be the go-to company for businesses and individuals who are looking for a professional and reliable event planner.
+
+                </p>
+              </div>
+            </div>
+            <div class="msn-box">
+              <div class="sub-msn-box">
+                <h4>Our Mission</h4>
+                <p>
+                  Our mission is to create unforgettable events that leave our clients feeling happy, satisfied, and inspired.<br>
+
+                  We are excited to have you as a part of our NABI Community!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!------------------SERVICES-------------------->
+
+
+    <section class="services">
+      <div class="main-services">
+        <div class="main-top-section">
+          <h1>SERVICES</h1>
+        </div>
+        <div class="main-conatiner">
+        <div class="container">
+            <div class="card" style="--clr: #03A9F4">
+                <div class="img-box">
+                    <img src={% static 'img/Services/corporate-events.jpg' %} alt="#">
+                </div>
+                <div class="content">
+                    <h2>Corporate Event</h2>
+                    <p>
+                        We create unforgettable corporate events that boost employee morale and drive business results. From team-building activities to high-profile company celebrations, our expert planners ensure every detail is perfect.
+
+                    </p>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+            <div class="card" style="--clr: #FF3E7F">
+                <div class="img-box">
+                    <img src={% static 'img/Services/Social Event.jpeg' %} alt="#">
+                </div>
+                <div class="content">
+                    <h2>Social Event</h2>
+                    <p>
+                        We plan and execute social events that bring people together and create lasting memories. Whether it's a wedding, anniversary, or birthday party, our dedicated team designs unique experiences tailored to your vision
+                    </p>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+            <div class="card" style="--clr: #03A9F4">
+                <div class="img-box">
+                    <img src={% static 'img/Services/fundraiser.jpg' %} alt="#">
+                </div>
+                <div class="content">
+                    <h2>Fundraisers</h2>
+                    <p>
+                        We help you raise money for your cause with successful and engaging fundraising events. Our experienced fundraisers work closely with you to develop innovative strategies, organize compelling auctions, and maximizing your fundraising potential.
+
+                    </p>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+            <div class="card" style="--clr: #009688">
+                <div class="img-box">
+                    <img src={% static "img/Services/trade-show.webp" %} alt="#">
+                </div>
+                <div class="content">
+                    <h2>Trade Shows</h2>
+                    <p>
+                        We create trade show exhibits that attract attention, generate leads, and drive sales. With a deep understanding of your brand and industry, our design team crafts captivating displays that not only showcase your products or services but also create immersive experiences.
+
+                    </p>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+            <div class="card" style="--clr: #03A9F4">
+                <div class="img-box">
+                    <img src={% static "img/Services/conferences.jpg" %} alt="#">
+                </div>
+                <div class="content">
+                    <h2>Conferences</h2>
+                    <p>
+                        We organize conferences that are informative and productive for attendees. From venue selection and speaker coordination, our meticulous planning ensures seamless execution, allowing participants to focus on gaining valuable insights.
+                    </p>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+
+
+      </div>
+    </section>
+
+
+    <!-------------------Events-------------------->
+
+
+    <section class="events">
+      <div class="main-events">
+        <div class="event-hd">
+          <h2>EVENTS</h2>
+        </div>
+        <div class="event-card-sctn">
+          <div class="event-card">
+            <img src={% static "img\Cover-image-5-1024x535.jpg" %} alt="card">
+            <div class="intro">
+                <h1>BYTE & BIO</h1>
+                <p>We are thrilled to invite you to our upcoming extraordinary Technical and Medical Fest aimed at promoting awareness about various government policies and bridging the generation gap in our country. This unique event, aptly named "Byte and Bio," promises to be an enlightening and enjoyable experience for all!</p>
+            </div>
+        </div>
+        </div>
+       </div>
+    </section>
+
+
+<!-------------PARTNERS---------->
+
+
+    <section class="partners">
+      <div class="main-partners">
+        <div class="prtnr-hd">
+          <h4>PARTNERS</h4>
+        </div>
+        <div class="prtnr-sctn-main">
+          <div class="prtnr-sctn">
+            <img src={% static "img/Partners-Logo/ACM-LOGO.jpg" %} alt="prtnr-1">
+          </div>
+          <div class="prtnr-sctn">
+            <img src={% static "img/Partners-Logo/HACKOFF-LOGO.png" %} alt="prtnr-2">
+          </div>
+          <div class="prtnr-sctn">
+            <img src={% static "img/Partners-Logo/KOSHISH-LOGO.jpg" %} alt="prtnr-3">
+          </div>
+          <div class="prtnr-sctn">
+            <img src={% static "img/Partners-Logo/ACM-LOGO.jpg" %} alt="prtnr-4">
+          </div>
+        </div>
+      </div>
+    </section> 
+
+
+<!-------------------------CONTACT US------------------------>
+
+
+    <section id="contact"  class="contact-us">
+      <div class="main-contact">
+        <div class="cntct-box-right">
+          <div class="cntct-box-right-hd">
+            <h2>Get In Touch</h2>
+            <h5>Feel Free to drop a line below.</h5>
+          </div>
+          <form action="/submit" method="POST">
+            {% csrf_token %}
+            <input class="input-1" type="text" name="Name" placeholder="Your Name" required>
+            <input class="input-2" type="email" name="Email" placeholder="Your Email" required>
+            <textarea class="txt-area" name="message" rows="4" cols="30" placeholder="Your Message"></textarea>
+            <input type="submit" class="submit-btn" value="Submit">
+          </form>
+        </div>
+        <div class="cntct-box-left">
+          <div class="cntct-box-left-hd">
+            <h2>Contact Us</h2>
+          </div>
+          <div class="cntct-container">
+            <div>
+              <i class="fa-solid fa-location-dot fa-bounce"></i>
+              <a href="https://www.google.com/maps?rlz=1C1CHBF_enIN1021IN1022&output=search&q=dehradun+malsi&entry=mc&sa=X&ved=2ahUKEwjlosOHje7_AhUj-TgGHR6kBT0Q0pQJegQIDRAB"><h3>Location</h3></a>
+            </div>
+            <div>
+              <i class="fa-solid fa-envelope fa-beat"></i>
+              <h3><a href="mailto:nabi.manage@gmail.com">Email</a></h3>
+            </div>
+            <div>
+              <i class="fa-solid fa-phone fa-shake"></i>
+              <h3>+91 78950089</h3>
+            </div>
+            <div>
+              <i class="fa-solid fa-globe fa-fade"></i>
+              <h3>+91 78950089</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<!-----------------FOOTER------------------>
+
+
+<footer>
+  <div class="footer-col">
+    <h2>NABI</h2>
+    <ul>
+      <li><a href="#about-section">About us</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#">Updates</a></li>
+    </ul>
+    <div class="social">
+      <a href="https://www.youtube.com/@NABI-Team"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://twitter.com/Nabi_Org?t=0WYQ4PlhpbOkb5ao5jB3rg&s=09"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/company/nabi-social/"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100093588586603&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://instagram.com/nabi.manage?igshid=MzRlODBiNWFlZA"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </div>
+  <div class="footer-col">
+    <h2>Company</h2>
+    <ul>
+      <li><a href="#contact">Contact us</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Culture</a></li>
+      <li><a href="#">Jobs</a></li>
+    </ul>
+  </div>
+
+  </div>
+  <div class="footer-col">
+    <h2>Support</h2>
+    <ul>
+      <li><a href="#">Help Center</a></li>
+      <li><a href="#">Service Status</a></li>
+      <li><a href="#">Report a Problem</a></li>
+    </ul>
+    <div class="copy">
+      <h6>copyright@2023 NABI</h6>
+    </div>
+  </div>
+
+  </div>
+</footer>
+
+
+
+    <!-- MDB -->
+    <script type="text/javascript" src={% static "js/mdb.min.js" %}></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src={% static "js/app.js" %}></script>
+  </body>
+</html>
